@@ -1,0 +1,159 @@
+<!--
+Personal Website template (single-file)
+How to use:
+1) Open this file (index.html) and replace the placeholder text (YOUR_NAME, YOUR_AFFILIATION, etc.) with your content.
+2) Save and preview locally (open index.html in a browser).
+3) To publish on GitHub Pages:
+   - Create a repository named USERNAME.github.io (replace USERNAME with your GitHub username).
+   - git init; git add index.html; git commit -m "Initial site";
+   - git remote add origin https://github.com/USERNAME/USERNAME.github.io.git
+   - git push -u origin main
+   (or upload index.html via GitHub web UI to the repository root)
+   - GitHub Pages will publish at https://USERNAME.github.io usually within a minute.
+
+What's included:
+- Responsive single-page layout (About, Research, Teaching, Publications, Contact)
+- Simple inline CSS (no external deps) so it's ready-to-publish as a single file
+- Comments and TODO markers where you should paste content from your Google Site
+- A printable "Download CV" button (link to resume.pdf when you upload it)
+
+If you want, paste the content from your Google Site (or share a link) and I will customize this file for you.
+-->
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>YOUR_NAME — Homepage</title>
+  <meta name="description" content="Academic homepage for YOUR_NAME">
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--muted:#9aa6b2;--accent:#3b82f6}
+    html,body{height:100%;margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial}
+    body{background:linear-gradient(180deg,#071022 0%, #071727 100%);color:#e6eef6;line-height:1.5}
+    .container{max-width:980px;margin:0 auto;padding:28px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .avatar{width:64px;height:64px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#60a5fa);display:flex;align-items:center;justify-content:center;font-weight:700}
+    nav a{color:var(--muted);text-decoration:none;margin-left:14px}
+    h1{font-size:clamp(26px,4vw,36px);margin:8px 0}
+    .lead{color:var(--muted);margin:0 0 18px}
+    .grid{display:grid;grid-template-columns:1fr;gap:18px}
+    @media(min-width:880px){.grid{grid-template-columns:2fr 1fr}}
+    .card{background:rgba(255,255,255,0.02);padding:18px;border-radius:12px;box-shadow:0 8px 30px rgba(2,6,23,0.6)}
+    .section-title{font-weight:600;margin-bottom:10px}
+    ul.clean{padding-left:18px;margin:6px 0}
+    .pub{margin-bottom:10px}
+    footer{padding:18px 0;color:var(--muted);text-align:center}
+    .btn{display:inline-block;padding:8px 12px;border-radius:10px;background:linear-gradient(90deg,var(--accent),#60a5fa);color:#042; font-weight:600;text-decoration:none}
+    .meta{color:var(--muted);font-size:14px}
+    .contact a{display:inline-block;margin-right:8px;color:var(--muted);text-decoration:none}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="avatar">PN</div>
+        <div>
+          <div class="meta">YOUR_NAME</div>
+          <div style="font-weight:700">YOUR_FULL_TITLE — YOUR_AFFILIATION</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#pubs">Publications</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main class="grid" style="margin-top:18px">
+      <section>
+        <div class="card">
+          <h1>YOUR_NAME</h1>
+          <p class="lead">Assistant Professor / NBHM Postdoctoral Fellow — Algebraic Geometry. Based in Bengaluru, India. (Replace this line with 1–2 sentences from your Google Site.)</p>
+
+          <p>
+            <a class="btn" href="resume.pdf" download>Download CV</a>
+            <a class="btn" href="#contact" style="margin-left:10px;background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)">Contact</a>
+          </p>
+
+          <hr style="border:none;height:1px;background:rgba(255,255,255,0.03);margin:18px 0">
+
+          <h3 class="section-title">Highlights</h3>
+          <ul class="clean">
+            <li>Research: algebraic groups, flag varieties, Schubert varieties, representation theory.</li>
+            <li>Teaching: Graduate and undergraduate courses in algebra and geometry.</li>
+            <li>Open to PhD/PG supervision and collaborations.</li>
+          </ul>
+        </div>
+
+        <div class="card" style="margin-top:16px">
+          <h3 class="section-title" id="research">Research</h3>
+          <!-- TODO: Replace the paragraphs below with the Research section content from your Google Site -->
+          <p class="meta">Current projects</p>
+          <p>Short description of current research projects, e.g., nef cone of blow-ups of generalized flag varieties, branching of Schubert varieties, toric methods, etc.</p>
+
+          <h4 style="margin-top:12px">Selected publications</h4>
+          <div class="pub">1. Author, Title, Journal, Year. <a href="#">pdf</a></div>
+          <div class="pub">2. Author, Title, Journal, Year. <a href="#">pdf</a></div>
+          <p class="meta">(Replace with your bibtex or list of publications. If you want, I can render a formatted publications list from your .bib file.)</p>
+        </div>
+
+        <div class="card" style="margin-top:16px">
+          <h3 class="section-title" id="teaching">Teaching</h3>
+          <p class="meta">Courses taught / currently teaching</p>
+          <ul>
+            <li>Course 1 — Semester/Year (short description)</li>
+            <li>Course 2 — Semester/Year</li>
+          </ul>
+          <p class="meta">Office hours</p>
+          <p>Tuesdays 4–6pm, LH 416 (replace with your schedule)</p>
+        </div>
+      </section>
+
+      <aside>
+        <div class="card">
+          <h3 class="section-title">Contact</h3>
+          <p class="meta">Email</p>
+          <p><a href="mailto:your.email@institute.edu">your.email@institute.edu</a></p>
+          <p class="meta">Office</p>
+          <p>Department of Mathematics, Indian Institute of Science, Bengaluru</p>
+
+          <hr style="border:none;height:1px;background:rgba(255,255,255,0.03);margin:12px 0">
+
+          <h3 class="section-title">Links</h3>
+          <p class="contact">
+            <a href="#">Google Scholar</a>
+            <a href="#">ORCID</a>
+            <a href="#">GitHub</a>
+          </p>
+
+          <hr style="border:none;height:1px;background:rgba(255,255,255,0.03);margin:12px 0">
+
+          <h3 class="section-title">Quick CV</h3>
+          <p class="meta">Position</p>
+          <p>NBHM Postdoctoral Fellow (or Assistant Professor — replace as needed)</p>
+          <p class="meta">Education</p>
+          <p>PhD, University, Year</p>
+        </div>
+
+        <div class="card" style="margin-top:16px">
+          <h3 class="section-title" id="pubs">Recent publications</h3>
+          <ol>
+            <li>Paper A — Journal, Year</li>
+            <li>Paper B — Journal, Year</li>
+            <li>Paper C — Journal, Year</li>
+          </ol>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      <div class="meta">Made with ❤️ — Replace this footer with your preferred acknowledgement. Version: 1.0</div>
+    </footer>
+  </div>
+</body>
+</html>
