@@ -1,0 +1,16 @@
+
+body{font-family: 'Times New Roman', Times, serif; background:#fff; color:#111; margin:0;}
+.page{display:flex; min-height:100vh;}
+.sidebar{width:320px; padding:30px; border-right:1px solid #e0e0e0; background:#fbfbfb;}
+.photo-wrap{width:100%;display:flex;justify-content:center;margin-bottom:12px;}
+.photo-img{width:160px;height:160px;object-fit:cover;border-radius:8px;border:1px solid #ddd;}
+.sidebar h1{margin:0;font-size:20px;color:#002244;text-align:center;}
+.sidebar .title{font-size:13px;color:#333;margin-top:6px;margin-bottom:12px;text-align:center;}
+.sidebar .contact{font-size:13px;color:#333;text-align:center;}
+.menu a{display:block;margin:8px 0;color:#004080;text-decoration:none;text-align:center;}
+.btn{display:inline-block;padding:8px 12px;background:#004080;color:#fff;border-radius:4px;text-decoration:none;font-size:14px;}
+.content{flex:1;padding:36px;max-width:900px;}
+h2{color:#002244;margin-top:0;}
+ol li, ul li{margin:8px 0;}
+small, .small{color:#666;font-size:12px;}
+footer{margin-top:40px;color:#666;border-top:1px solid #eee;padding-top:12px;}
